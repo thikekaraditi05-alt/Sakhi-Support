@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Sakhi Support</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <!-- Left Side -->
+        <div class="login-image">
+
+            <img src="../Images/login-image.png" alt="Women Learning">
+
+            <div class="overlay">
+                <h1>Empowering Women Through Learning</h1>
+                <p>Join thousands of women building brighter futures with Sakhi Support.</p>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="login-form">
+
+            <div class="form-box">
+
+                <img src="../Images/logo.jpeg" class="logo" alt="Logo">
+
+                <h2>Welcome Back</h2>
+
+                <p>Login to continue your journey.</p>
+
+                <form>
+
+                    <div class="input-box">
+                        <i data-lucide="mail"></i>
+                        <input type="email"
+                               placeholder="Email Address"
+                               name="email"
+                               required>
+                    </div>
+
+                    <div class="input-box password-box">
+                        <i data-lucide="lock"></i>
+
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            id="password"
+                            name="password"
+                            required>
+
+                        <span id="togglePassword">
+                            <i data-lucide="eye"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="options">
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+                    <button class="login-btn">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+                <div class="divider">
+
+                    <span>OR</span>
+
+                </div>
+
+                <button class="google-btn">
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+
+                    Continue with Google
+
+                </button>
+
+                <div class="register">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+
+                        Create Account
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../javascript/login.js"></script>
+
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+</body>
+
+</html>

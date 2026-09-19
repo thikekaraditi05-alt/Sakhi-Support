@@ -1,0 +1,1117 @@
+/* ===================================================
+                    GOOGLE FONTS
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* ===================================================
+                    RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#FAF7F2;
+    color:#333;
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+section{
+
+    padding:90px 8%;
+
+}
+
+/* ===================================================
+                    NAVBAR
+=================================================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:85px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 7%;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo img{
+
+    width:65px;
+
+}
+
+nav{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover,
+nav a.active{
+
+    color:#4E7A47;
+
+}
+
+.nav-buttons{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.login-btn{
+
+    border:2px solid #4E7A47;
+
+    color:#4E7A47;
+
+    text-decoration:none;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#4E7A47;
+
+    color:white;
+
+}
+
+.join-btn{
+
+    background:#4E7A47;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.join-btn:hover{
+
+    background:#3D6337;
+
+}
+
+/* ===================================================
+                    HERO
+=================================================== */
+
+.mentor-hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:150px 8% 80px;
+
+    background:linear-gradient(135deg,#FFFDF9,#F3EEE6);
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    background:#EAF6EA;
+
+    color:#4E7A47;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:4rem;
+
+    color:#5D4037;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1 span{
+
+    color:#4E7A47;
+
+    display:block;
+
+}
+
+.hero-content p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    text-decoration:none;
+
+    background:#4E7A47;
+
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:35px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 25px rgba(78,122,71,.25);
+
+}
+
+.secondary-btn{
+
+    text-decoration:none;
+
+    border:2px solid #4E7A47;
+
+    color:#4E7A47;
+
+    padding:16px 34px;
+
+    border-radius:35px;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#4E7A47;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    max-width:620px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ===================================================
+                SEARCH SECTION
+=================================================== */
+
+.mentor-search{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.mentor-search h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.7rem;
+
+    color:#5D4037;
+
+    margin-bottom:45px;
+
+}
+
+.search-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr auto;
+
+    gap:20px;
+
+}
+
+.search-container input,
+.search-container select{
+
+    height:60px;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 20px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+}
+
+.search-container button{
+
+    background:#4E7A47;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:0 35px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-container button:hover{
+
+    background:#3D6337;
+
+    transform:translateY(-3px);
+
+}
+/* ===================================================
+                FEATURED MENTORS
+=================================================== */
+
+.featured-mentors{
+
+    background:#FAF7F2;
+
+    text-align:center;
+
+}
+
+.featured-mentors h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.8rem;
+
+    color:#5D4037;
+
+    margin-bottom:60px;
+
+}
+
+.mentor-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+/* ==========================
+        MENTOR CARD
+========================== */
+
+.mentor-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+}
+
+.mentor-card{
+
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.mentor-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(78,122,71,.18);
+
+}
+
+/* Header */
+
+.mentor-header{
+
+    height:170px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+}
+
+.mentor-header i{
+
+    width:55px;
+    height:55px;
+    margin-bottom:15px;
+
+}
+
+.mentor-header h3{
+
+    font-size:24px;
+    letter-spacing:1px;
+
+}
+
+/* Different Colors */
+
+.java{
+
+    background:linear-gradient(135deg,#f89820,#ea6a00);
+
+}
+
+.python{
+
+    background:linear-gradient(135deg,#3776AB,#FFD43B);
+
+}
+
+.web{
+
+    background:linear-gradient(135deg,#3949ab,#00acc1);
+
+}
+
+.cloud{
+
+    background:linear-gradient(135deg,#4E7A47,#2E7D32);
+
+}
+
+/* Content */
+
+.mentor-content{
+
+    padding:28px;
+
+    text-align:center;
+
+}
+
+.mentor-content h3{
+
+    color:#5D4037;
+    margin-bottom:8px;
+    font-size:24px;
+
+}
+
+.mentor-content h4{
+
+    color:#4E7A47;
+    margin-bottom:8px;
+    font-size:17px;
+
+}
+
+.company{
+
+    color:#666;
+    margin-bottom:10px;
+
+}
+
+.rating{
+
+    color:#F4B400;
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+.mentor-info{
+
+    text-align:left;
+    margin:20px 0;
+
+}
+
+.mentor-info p{
+
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.6;
+
+}
+
+.mentor-content a{
+
+    display:inline-block;
+    width:100%;
+
+    background:#4E7A47;
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.mentor-content a:hover{
+
+    background:#3D6337;
+
+}
+/* ===================================================
+                CARD ANIMATION
+=================================================== */
+
+.mentor-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ===================================================
+                HOW MENTORSHIP WORKS
+=================================================== */
+
+.how-it-works{
+
+    background:#ffffff;
+    text-align:center;
+
+}
+
+.how-it-works h2{
+
+    font-family:'Playfair Display',serif;
+    font-size:2.8rem;
+    color:#5D4037;
+    margin-bottom:60px;
+
+}
+
+.steps-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+}
+
+.step-card{
+
+    background:#FAF7F2;
+    padding:40px 25px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(78,122,71,.18);
+
+}
+
+.step-card i{
+
+    width:55px;
+    height:55px;
+    color:#4E7A47;
+    margin-bottom:20px;
+
+}
+
+.step-card h3{
+
+    color:#5D4037;
+    margin-bottom:15px;
+    font-size:22px;
+
+}
+
+.step-card p{
+
+    color:#666;
+    line-height:1.8;
+
+}
+
+/* ===================================================
+                EXPERTISE
+=================================================== */
+
+.expertise{
+
+    background:#F7F3ED;
+    text-align:center;
+
+}
+
+.expertise h2{
+
+    font-family:'Playfair Display',serif;
+    font-size:2.8rem;
+    color:#5D4037;
+    margin-bottom:60px;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.expertise-card{
+
+    background:white;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(78,122,71,.18);
+
+}
+
+.expertise-card i{
+
+    width:55px;
+    height:55px;
+    color:#4E7A47;
+    margin-bottom:20px;
+
+}
+
+.expertise-card h3{
+
+    color:#5D4037;
+    font-size:22px;
+
+}
+
+/* ===================================================
+                SUCCESS STORIES
+=================================================== */
+
+.student-stories{
+
+    background:white;
+    text-align:center;
+
+}
+
+.student-stories h2{
+
+    font-family:'Playfair Display',serif;
+    font-size:2.8rem;
+    color:#5D4037;
+    margin-bottom:60px;
+
+}
+
+.story-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.story-card{
+
+    background:#FAF7F2;
+    padding:35px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.story-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.story-card p{
+
+    font-style:italic;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:25px;
+
+}
+
+.story-card h4{
+
+    color:#4E7A47;
+
+}
+
+/* ===================================================
+                BECOME MENTOR
+=================================================== */
+
+.become-mentor{
+
+    background:linear-gradient(135deg,#4E7A47,#5D4037);
+    color:white;
+    text-align:center;
+
+}
+
+.become-content{
+
+    max-width:800px;
+    margin:auto;
+
+}
+
+.become-content h2{
+
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:25px;
+
+}
+
+.become-content p{
+
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:40px;
+
+}
+
+.mentor-btn{
+
+    display:inline-block;
+    text-decoration:none;
+
+    background:white;
+    color:#4E7A47;
+
+    padding:16px 40px;
+
+    border-radius:35px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.mentor-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===================================================
+                    FOOTER
+=================================================== */
+
+footer{
+
+    background:#2E2E2E;
+    color:white;
+    padding:70px 8% 20px;
+
+}
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+
+}
+
+.footer-about h3{
+
+    font-size:30px;
+    margin-bottom:18px;
+    font-family:'Playfair Display',serif;
+
+}
+
+.footer-about p{
+
+    color:#d7d7d7;
+    line-height:1.8;
+
+}
+
+.footer-links h4,
+.footer-contact h4{
+
+    margin-bottom:18px;
+
+}
+
+.footer-links ul,
+.footer-contact ul{
+
+    list-style:none;
+
+}
+
+.footer-links li,
+.footer-contact li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#d7d7d7;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#8BC34A;
+
+}
+
+.footer-contact li{
+
+    color:#d7d7d7;
+
+}
+
+.footer-bottom{
+
+    margin-top:45px;
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    color:#ccc;
+
+}
+
+/* ===================================================
+                RESPONSIVE
+=================================================== */
+
+@media(max-width:1200px){
+
+.steps-grid,
+.story-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.expertise-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.mentor-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.mentor-hero{
+
+    flex-direction:column-reverse;
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+    text-align:center;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:20px 0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.mentor-grid,
+.steps-grid,
+.expertise-grid,
+.story-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.search-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-content h1{
+
+    font-size:2.8rem;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+section{
+
+    padding:70px 25px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+    font-size:2.2rem;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+}
+
+/* ===================================================
+                SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F3F3F3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4E7A47;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#3D6337;
+
+}

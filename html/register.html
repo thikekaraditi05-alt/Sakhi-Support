@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Sakhi Support</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/register.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<div class="register-container">
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <div class="register-image">
+
+        <img src="../Images/login-image.png" alt="Women Empowerment">
+
+        <div class="overlay">
+
+            <h1>Begin Your Journey</h1>
+
+            <p>
+                Join Sakhi Support and unlock opportunities in education,
+                careers, mentorship, and community support.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ================= RIGHT SIDE ================= -->
+
+    <div class="register-form">
+
+        <div class="form-box">
+
+            <img src="../Images/logo.jpeg"
+                 class="logo"
+                 alt="Logo">
+
+            <h2>Create Account</h2>
+
+            <p>
+                Become a part of the Sakhi Support community.
+            </p>
+
+            <form id="registerForm">
+
+                <!-- Full Name -->
+
+                <div class="input-box">
+
+                    <!-- <i data-lucide="user"></i> -->
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        required>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-box">
+
+                    <!-- <i data-lucide="mail"></i> -->
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-box">
+
+                    <!-- <i data-lucide="phone"></i> -->
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        maxlength="10"
+                        required>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-box password-box">
+
+                <!-- <i data-lucide="lock"></i> -->
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+
+                    <span id="togglePassword">
+
+                        
+
+                    </span>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-box password-box">
+
+                    <!-- <i data-lucide="lock"></i> -->
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                    <span id="toggleConfirmPassword">
+
+                        
+
+                    </span>
+
+                </div>
+
+                <!-- Terms -->
+
+                <div class="terms">
+
+                    <label>
+
+                        <input type="checkbox" required>
+
+                        I agree to the
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </label>
+
+                </div>
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <!-- Divider -->
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <!-- Google -->
+
+            <button class="google-btn">
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                    width="22">
+
+                Continue with Google
+
+            </button>
+
+            <!-- Login -->
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../javascript/register.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+
+</html>

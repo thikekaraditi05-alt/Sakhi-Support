@@ -1,0 +1,646 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FAF7F2;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 7%;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 20px rgba(0,0,0,.06);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+.logo span{
+
+    font-size:1.4rem;
+    font-weight:700;
+    color:#5D4037;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+
+    color:#4E7A47;
+
+}
+
+.nav-icons{
+
+    display:flex;
+    gap:18px;
+
+}
+
+.nav-icons svg{
+
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    color:#555;
+    transition:.3s;
+
+}
+
+.nav-icons svg:hover{
+
+    color:#4E7A47;
+    transform:scale(1.1);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    width:86%;
+    margin:50px auto;
+
+    background:linear-gradient(135deg,#4E7A47,#7DA46B);
+
+    border-radius:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:55px;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.hero-text h1{
+
+    font-size:3rem;
+    margin-bottom:20px;
+    font-family:'Playfair Display',serif;
+
+}
+
+.hero-text p{
+
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.hero-text button{
+
+    background:white;
+    color:#4E7A47;
+
+    border:none;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hero-text button:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.hero-image{
+
+    width:42%;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    display:block;
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section{
+
+    width:86%;
+    margin:60px auto;
+
+}
+
+.section h2{
+
+    font-size:2rem;
+    color:#5D4037;
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats{
+
+    width:86%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card svg{
+
+    width:34px;
+    height:34px;
+
+    color:#4E7A47;
+
+    margin-bottom:18px;
+
+}
+
+.card h2{
+
+    font-size:2rem;
+    color:#5D4037;
+
+}
+
+.card p{
+
+    margin-top:10px;
+    color:#777;
+
+}
+/* ===========================
+   COURSE CARDS
+=========================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.course-card{
+
+    background:#fff;
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+}
+
+.course-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.course-card img{
+
+    width:90px;
+    height:90px;
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+}
+
+.course-card h3{
+
+    color:#5D4037;
+    margin-bottom:18px;
+
+}
+
+.progress{
+
+    width:100%;
+    height:10px;
+
+    background:#ECECEC;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:18px;
+
+}
+
+.progress div{
+
+    height:100%;
+    background:linear-gradient(90deg,#4E7A47,#76B16A);
+    border-radius:20px;
+
+}
+
+.course-card button{
+
+    background:#4E7A47;
+    color:white;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.course-card button:hover{
+
+    background:#3d6337;
+
+}
+
+/* ===========================
+   JOB SECTION
+=========================== */
+
+.jobs{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.job-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.job-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.job-card h3{
+
+    color:#5D4037;
+    margin-bottom:10px;
+
+}
+
+.job-card p{
+
+    color:#4E7A47;
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.job-card span{
+
+    display:block;
+
+    color:#777;
+
+    margin-bottom:20px;
+
+}
+
+.job-card button{
+
+    background:#4E7A47;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 26px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.job-card button:hover{
+
+    background:#3f6639;
+
+}
+
+/* ===========================
+   MENTOR
+=========================== */
+
+.mentor-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.mentor-card img{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.mentor-card div{
+
+    flex:1;
+
+    margin-left:25px;
+
+}
+
+.mentor-card h3{
+
+    color:#5D4037;
+
+}
+
+.mentor-card p{
+
+    color:#666;
+
+    margin:8px 0;
+
+}
+
+.mentor-card span{
+
+    color:#4E7A47;
+    font-weight:600;
+
+}
+
+.mentor-card button{
+
+    background:#4E7A47;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+}
+
+.mentor-card button:hover{
+
+    background:#3d6337;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:70px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#5D4037;
+
+    color:white;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-text{
+
+    width:100%;
+    margin-bottom:40px;
+
+}
+
+.hero-image{
+
+    width:75%;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.mentor-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.mentor-card div{
+
+    margin:20px 0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.navbar ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+}
+
+}

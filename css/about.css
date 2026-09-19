@@ -1,0 +1,1278 @@
+/* ===================================================
+                GOOGLE FONTS
+=================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+/* ===================================================
+                    RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FAF7F2;
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+/* ===================================================
+                    NAVBAR
+=================================================== */
+
+.navbar{
+
+    width:100%;
+
+    height:85px;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 7%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 25px rgba(0,0,0,.05);
+
+    z-index:999;
+
+}
+
+.logo img{
+
+    width:65px;
+
+    cursor:pointer;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:#4E7A47;
+
+}
+
+nav a.active{
+
+    color:#4E7A47;
+
+    font-weight:600;
+
+}
+
+.nav-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.login-btn{
+
+    text-decoration:none;
+
+    color:#4E7A47;
+
+    border:2px solid #4E7A47;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    background:#4E7A47;
+
+    color:white;
+
+}
+
+.join-btn{
+
+    text-decoration:none;
+
+    background:#4E7A47;
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    transition:.35s;
+
+}
+
+.join-btn:hover{
+
+    background:#3d6337;
+
+}
+
+/* ===================================================
+                HERO SECTION
+=================================================== */
+
+.about-hero{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:140px 8% 80px;
+
+    background:linear-gradient(
+        135deg,
+        #fffaf4,
+        #f5efe5
+    );
+
+}
+
+.about-content{
+
+    flex:1;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    background:#EAF6EA;
+
+    color:#4E7A47;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.about-content h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:4rem;
+
+    line-height:1.15;
+
+    color:#5D4037;
+
+    margin-bottom:25px;
+
+}
+
+.about-content h1 span{
+
+    display:block;
+
+    color:#4E7A47;
+
+}
+
+.about-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+/* ===================================================
+                HERO BUTTONS
+=================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    text-decoration:none;
+
+    background:#4E7A47;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 25px rgba(78,122,71,.3);
+
+}
+
+.secondary-btn{
+
+    text-decoration:none;
+
+    border:2px solid #4E7A47;
+
+    color:#4E7A47;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.secondary-btn:hover{
+
+    background:#4E7A47;
+
+    color:white;
+
+}
+
+/* ===================================================
+                HERO IMAGE
+=================================================== */
+
+.about-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:35px;
+
+    object-fit:cover;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ===================================================
+                COMMON SECTION
+=================================================== */
+
+section{
+
+    padding:100px 8%;
+
+}
+
+section h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.8rem;
+
+    color:#5D4037;
+
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/* ===================================================
+                MISSION SECTION
+=================================================== */
+
+.mission{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    background:#ffffff;
+
+}
+
+.mission-image{
+
+    flex:1;
+
+}
+
+.mission-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    object-fit:cover;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+
+    transition:.4s;
+
+}
+
+.mission-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.mission-content{
+
+    flex:1;
+
+}
+
+.mission-content span{
+
+    display:inline-block;
+
+    background:#EAF6EA;
+
+    color:#4E7A47;
+
+    padding:8px 20px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.mission-content h2{
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.mission-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+/* ===================================================
+                VISION SECTION
+=================================================== */
+
+.vision{
+
+    background:#F7F3ED;
+
+    text-align:center;
+
+}
+
+.vision-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.vision-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.vision-card p{
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#666;
+
+}
+
+/* ===================================================
+                VALUES SECTION
+=================================================== */
+
+.values{
+
+    background:#ffffff;
+
+    text-align:center;
+
+}
+
+.value-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.card{
+
+    background:#FAF7F2;
+
+    border-radius:25px;
+
+    padding:40px 30px;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(78,122,71,.18);
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    color:#5D4037;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    font-size:16px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ===================================================
+                SECTION TITLE
+=================================================== */
+
+.values h2,
+.vision h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+/* ===================================================
+                STATISTICS SECTION
+=================================================== */
+
+.stats{
+
+    background:#4E7A47;
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.stat{
+
+    padding:20px;
+
+}
+
+.stat h2{
+
+    font-size:3.5rem;
+
+    font-family:'Playfair Display',serif;
+
+    color:white;
+
+    margin-bottom:12px;
+
+}
+
+.stat p{
+
+    color:#f3f3f3;
+
+    font-size:18px;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===================================================
+                TEAM SECTION
+=================================================== */
+
+.team{
+
+    background:#FAF7F2;
+
+    text-align:center;
+
+}
+
+.team h2{
+
+    margin-bottom:60px;
+
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.member{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.member:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.member img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.member h3{
+
+    margin-top:25px;
+
+    color:#5D4037;
+
+    font-size:24px;
+
+}
+
+.member p{
+
+    margin:15px 25px 30px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+/* ===================================================
+                CALL TO ACTION
+=================================================== */
+
+.cta{
+
+    background:linear-gradient(135deg,#5D4037,#4E7A47);
+
+    color:white;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    margin:80px 8%;
+
+    padding:70px 40px;
+
+}
+
+.cta h2{
+
+    color:white;
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    color:#f2f2f2;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.cta a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:white;
+
+    color:#4E7A47;
+
+    padding:16px 40px;
+
+    border-radius:35px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.cta a:hover{
+
+    transform:translateY(-5px);
+
+    background:#f4f4f4;
+
+}
+
+/* ===================================================
+                FOOTER
+=================================================== */
+
+footer{
+
+    background:#2F2A27;
+
+    color:white;
+
+    padding:70px 8% 35px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer-about h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.footer-about p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4{
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+}
+
+.footer-links ul,
+.footer-contact ul,
+.footer-social ul{
+
+    list-style:none;
+
+}
+
+.footer-links li,
+.footer-contact li,
+.footer-social li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a,
+.footer-social a{
+
+    color:#d8d8d8;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+
+    color:#8BC34A;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:50px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+}
+/* ===================================================
+                SCROLL ANIMATIONS
+=================================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ===================================================
+                SMOOTH HOVER EFFECTS
+=================================================== */
+
+.about-image img,
+.mission-image img,
+.member,
+.card,
+.stat{
+
+    transition:all .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.member:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.primary-btn,
+.secondary-btn,
+.join-btn,
+.login-btn,
+.cta a{
+
+    transition:all .35s ease;
+
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.join-btn:hover,
+.login-btn:hover,
+.cta a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===================================================
+                CUSTOM SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f4f4f4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4E7A47;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#3b6136;
+
+}
+
+/* ===================================================
+                RESPONSIVE DESIGN
+=================================================== */
+
+@media(max-width:1200px){
+
+.about-hero,
+.mission{
+
+    gap:50px;
+
+}
+
+.about-content h1{
+
+    font-size:3.3rem;
+
+}
+
+.team-grid{
+
+    gap:25px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.navbar{
+
+    padding:18px 5%;
+
+}
+
+nav{
+
+    gap:18px;
+
+}
+
+.about-hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding-top:140px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    max-width:500px;
+
+}
+
+.mission{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.value-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.team-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin:20px 0;
+
+}
+
+.nav-buttons{
+
+    margin-bottom:15px;
+
+}
+
+.about-content h1{
+
+    font-size:2.6rem;
+
+}
+
+.about-content p{
+
+    font-size:16px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+.value-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.team-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.cta{
+
+    margin:60px 20px;
+
+    padding:50px 25px;
+
+}
+
+.cta h2{
+
+    font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.about-content h1{
+
+    font-size:2.1rem;
+
+}
+
+section{
+
+    padding:70px 20px;
+
+}
+
+.tag{
+
+    font-size:13px;
+
+}
+
+.mission-content h2{
+
+    font-size:2rem;
+
+}
+
+.card{
+
+    padding:30px 20px;
+
+}
+
+.member img{
+
+    height:250px;
+
+}
+
+.stat h2{
+
+    font-size:2.7rem;
+
+}
+
+}
+
+/* ===================================================
+                FINAL POLISH
+=================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    transition:.3s;
+
+}
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.primary-btn,
+.secondary-btn,
+.login-btn,
+.join-btn,
+.cta a{
+
+    cursor:pointer;
+
+}
+
+section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}

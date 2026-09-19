@@ -1,0 +1,160 @@
+/* ================= HERO ================= */
+
+.hero{
+    background:
+
+linear-gradient(
+
+to right,
+
+rgba(250,243,234,.80) 0%,
+
+rgba(250,243,234,.55) 35%,
+
+rgba(250,243,234,.20) 60%,
+
+rgba(250,243,234,0) 100%
+
+),
+
+
+        url("../Images/hero.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hero-container{
+
+    width:88%;
+    margin: auto;
+
+}
+
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#EEF7ED;
+
+    color:#4E7A47;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:5.6rem;
+
+    line-height:1;
+
+    color:#5B3426;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:#4E7A47;
+
+}
+
+.hero p{
+
+    font-size:1.15rem;
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+    max-width:580px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#4E7A47;
+
+    color:#fff;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+box-shadow:
+
+0 15px 30px rgba(78,122,71,.35);
+
+transform:translateY(-5px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid #4E7A47;
+
+    color:#4E7A47;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.btn-secondary:hover{
+
+    background:#4E7A47;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}

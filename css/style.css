@@ -1,0 +1,1904 @@
+/* Google Fonts */
+@import url("reset.css");
+@import url("variables.css");
+
+@import url("navbar.css");
+@import url("hero.css");
+@import url("mission.css");
+@import url("stats.css");
+@import url("services.css");
+@import url("stories.css");
+@import url("footer.css");
+
+@import url("animations.css");
+@import url("responsive.css");
+:root{
+
+    --primary:#4E7A47;
+    --secondary:#5D3424;
+    --accent:#D18A43;
+
+    --bg:#f0dbc2;
+
+    --white:#ffffff;
+
+    --light-green:#EAF4E5;
+
+    --light-orange:#FFF3E7;
+
+    --text:#2E2E2E;
+
+    --gray:#6F6F6F;
+
+    --radius:18px;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+h1,h2,h3,h4{
+
+    font-family:'Playfair Display',serif;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FAF3EA;
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+/* ===================================================
+                IMPACT SECTION
+=================================================== */
+
+.impact-section {
+
+    padding: 100px 8%;
+
+    background: #ffffff;
+
+    text-align: center;
+
+}
+
+.impact-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 65px;
+
+}
+
+.section-tag {
+
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    border-radius: 30px;
+
+    background: #EAF6EA;
+
+    color: #4E7A47;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.impact-heading h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+
+    line-height: 1.25;
+
+    color: #5D4037;
+
+    margin-bottom: 25px;
+
+}
+
+.impact-heading p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= STAT CARDS ================= */
+
+.impact-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+.impact-card {
+
+    padding: 40px 25px;
+
+    background: #FAF7F2;
+
+    border-radius: 22px;
+
+    border: 1px solid #eee5da;
+
+    transition: .3s;
+
+}
+
+.impact-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(78,122,71,.15);
+
+}
+
+.impact-card i {
+
+    width: 42px;
+
+    height: 42px;
+
+    color: #4E7A47;
+
+    margin-bottom: 20px;
+
+}
+
+.impact-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2.5rem;
+
+    color: #5D4037;
+
+    margin-bottom: 8px;
+
+}
+
+.impact-card p {
+
+    color: #666;
+
+    font-size: 15px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 900px) {
+
+    .impact-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .impact-heading h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .impact-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ===================================================
+                HOW IT WORKS
+=================================================== */
+
+.how-it-works {
+
+    padding: 100px 8%;
+
+    background: #FAF7F2;
+
+    text-align: center;
+
+}
+
+.how-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 65px;
+
+}
+
+.how-heading h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+
+    color: #5D4037;
+
+    margin-bottom: 20px;
+
+}
+
+.how-heading p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= STEPS ================= */
+
+.steps-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+.step-card {
+
+    position: relative;
+
+    background: white;
+
+    padding: 45px 28px;
+
+    border-radius: 25px;
+
+    border: 1px solid #eee5da;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.step-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(78,122,71,.15);
+
+}
+
+.step-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #4E7A47;
+
+    background: #EAF6EA;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+}
+
+.step-card i {
+
+    width: 48px;
+
+    height: 48px;
+
+    color: #4E7A47;
+
+    margin: 15px auto 25px;
+
+}
+
+.step-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    color: #5D4037;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+.step-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 1000px) {
+
+    .steps-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .how-heading h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .steps-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* ===================================================
+            FEATURED OPPORTUNITIES
+=================================================== */
+
+.opportunities-section {
+
+    padding: 100px 8%;
+
+    background: #FAF7F2;
+
+}
+
+.opportunities-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+.opportunities-header h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+
+    color: #5D4037;
+
+    margin-bottom: 20px;
+
+}
+
+.opportunities-header p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= OPPORTUNITY GRID ================= */
+
+.opportunities-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+.opportunity-card {
+
+    background: #FFFFFF;
+
+    padding: 40px 35px;
+
+    border-radius: 25px;
+
+    border: 1px solid #EEE5DA;
+
+    transition: 0.3s ease;
+
+}
+
+.opportunity-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(78,122,71,.14);
+
+}
+
+
+/* ================= ICON ================= */
+
+.opportunity-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #EAF6EA;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+}
+
+.opportunity-icon i {
+
+    width: 28px;
+
+    height: 28px;
+
+    color: #4E7A47;
+
+}
+
+
+/* ================= LABEL ================= */
+
+.opportunity-label {
+
+    display: inline-block;
+
+    color: #4E7A47;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    background: #EAF6EA;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.opportunity-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 23px;
+
+    color: #5D4037;
+
+    margin-bottom: 15px;
+
+}
+
+.opportunity-card p {
+
+    color: #666;
+
+    line-height: 1.75;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ================= CARD LINK ================= */
+
+.opportunity-card a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #4E7A47;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.opportunity-card a i {
+
+    width: 17px;
+
+    height: 17px;
+
+    transition: 0.3s;
+
+}
+
+.opportunity-card a:hover {
+
+    color: #3D6337;
+
+}
+
+.opportunity-card a:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* ================= VIEW ALL BUTTON ================= */
+
+.opportunities-button {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+.primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    background: #4E7A47;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.primary-btn i {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+.primary-btn:hover {
+
+    background: #3D6337;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(78,122,71,.2);
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .opportunities-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .opportunities-section {
+
+        padding: 70px 25px;
+
+    }
+
+    .opportunities-header h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
+/* ===================================================
+                SUCCESS STORIES
+=================================================== */
+
+.success-section {
+
+    padding: 100px 8%;
+
+    background: #FFFFFF;
+
+}
+
+.success-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+.success-header h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+
+    color: #5D4037;
+
+    margin-bottom: 20px;
+
+}
+
+.success-header p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= STORY GRID ================= */
+
+.success-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* ================= STORY CARD ================= */
+
+.success-card {
+
+    background: #FAF7F2;
+
+    padding: 38px;
+
+    border-radius: 25px;
+
+    border: 1px solid #EEE5DA;
+
+    transition: .3s ease;
+
+}
+
+.success-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(78,122,71,.14);
+
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #EAF6EA;
+
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+
+}
+
+.quote-icon i {
+
+    width: 23px;
+
+    height: 23px;
+
+    color: #4E7A47;
+
+}
+
+
+/* ================= STORY TEXT ================= */
+
+.success-text {
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ================= PERSON ================= */
+
+.story-person {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.person-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #E5EBDD;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.person-icon i {
+
+    width: 22px;
+
+    height: 22px;
+
+    color: #4E7A47;
+
+}
+
+.story-person h4 {
+
+    color: #5D4037;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+
+}
+
+.story-person span {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .success-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .success-section {
+
+        padding: 70px 25px;
+
+    }
+
+    .success-header h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
+/* ===================================================
+                    FINAL CTA
+=================================================== */
+
+.home-cta {
+
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4E7A47,
+            #5D4037
+        );
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.cta-content {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+.cta-tag {
+
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+}
+
+.cta-content h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3.2rem;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+
+}
+
+.cta-content p {
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= CTA BUTTONS ================= */
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.cta-primary,
+.cta-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+
+}
+
+.cta-primary {
+
+    background: white;
+
+    color: #4E7A47;
+
+}
+
+.cta-primary i {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
+.cta-primary:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.cta-secondary {
+
+    border: 2px solid rgba(255,255,255,.8);
+
+    color: white;
+
+}
+
+.cta-secondary:hover {
+
+    background: white;
+
+    color: #4E7A47;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    .home-cta {
+
+        padding: 75px 25px;
+
+    }
+
+    .cta-content h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .cta-content p {
+
+        font-size: 15px;
+
+    }
+
+    .cta-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .cta-primary,
+    .cta-secondary {
+
+        width: 100%;
+
+    }
+
+}
+/* ===================================================
+                    FOOTER
+=================================================== */
+
+.site-footer {
+
+    background: #2E2A27;
+
+    color: #FFFFFF;
+
+    padding: 70px 8% 25px;
+
+}
+
+.footer-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+
+    gap: 50px;
+
+}
+
+
+/* ================= ABOUT ================= */
+
+.footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-logo img {
+
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+
+}
+
+.footer-logo h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 26px;
+
+}
+
+.footer-about p {
+
+    color: #D8D3CF;
+
+    line-height: 1.8;
+
+    max-width: 350px;
+
+}
+
+
+/* ================= COLUMNS ================= */
+
+.footer-column h4 {
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-column ul {
+
+    list-style: none;
+
+}
+
+.footer-column li {
+
+    margin-bottom: 13px;
+
+}
+
+.footer-column a {
+
+    color: #D8D3CF;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.footer-column a:hover {
+
+    color: #A8C99F;
+
+    padding-left: 4px;
+
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-list li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: #D8D3CF;
+
+}
+
+.contact-list i {
+
+    width: 18px;
+
+    height: 18px;
+
+    color: #A8C99F;
+
+    flex-shrink: 0;
+
+}
+
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+
+    max-width: 1250px;
+
+    margin: 45px auto 0;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    text-align: center;
+
+}
+
+.footer-bottom p {
+
+    color: #AAA39D;
+
+    font-size: 14px;
+
+}
+
+
+/* ===================================================
+                    RESPONSIVE
+=================================================== */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .site-footer {
+
+        padding: 60px 25px 20px;
+
+    }
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .footer-about p {
+
+        max-width: none;
+
+    }
+
+}
+/* ===================================================
+                NEWSLETTER SECTION
+=================================================== */
+
+.newsletter-section {
+
+    padding: 80px 8%;
+
+    background: #F2ECE3;
+
+}
+
+.newsletter-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 55px 60px;
+
+    background: #FFFFFF;
+
+    border-radius: 28px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.07);
+
+}
+
+.newsletter-content {
+
+    max-width: 600px;
+
+}
+
+.newsletter-tag {
+
+    display: inline-block;
+
+    padding: 7px 17px;
+
+    border-radius: 20px;
+
+    background: #EAF6EA;
+
+    color: #4E7A47;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+.newsletter-content h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    color: #5D4037;
+
+    font-size: 2.3rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 15px;
+
+}
+
+.newsletter-content p {
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= FORM ================= */
+
+.newsletter-form {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 420px;
+
+}
+
+.newsletter-form input {
+
+    flex: 1;
+
+    padding: 14px 18px;
+
+    border: 1px solid #DDD5CC;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    color: #333;
+
+    transition: .3s;
+
+}
+
+.newsletter-form input:focus {
+
+    border-color: #4E7A47;
+
+    box-shadow: 0 0 0 3px rgba(78,122,71,.1);
+
+}
+
+.newsletter-form button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 30px;
+
+    background: #4E7A47;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    white-space: nowrap;
+
+}
+
+.newsletter-form button i {
+
+    width: 17px;
+
+    height: 17px;
+
+}
+
+.newsletter-form button:hover {
+
+    background: #3D6337;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .newsletter-container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 45px 30px;
+
+    }
+
+    .newsletter-form {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .newsletter-section {
+
+        padding: 60px 25px;
+
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .newsletter-form {
+
+        flex-direction: column;
+
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+
+        width: 100%;
+
+    }
+
+    .newsletter-form button {
+
+        justify-content: center;
+
+    }
+
+}
+/* ===================================================
+                    TESTIMONIALS
+=================================================== */
+
+.testimonials-section {
+
+    padding: 100px 8%;
+
+    background: #FFFFFF;
+
+}
+
+.testimonials-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+.testimonials-header h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+
+    color: #5D4037;
+
+    margin-bottom: 20px;
+
+}
+
+.testimonials-header p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================= TESTIMONIAL GRID ================= */
+
+.testimonials-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* ================= CARD ================= */
+
+.testimonial-card {
+
+    background: #FAF7F2;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    border: 1px solid #EEE5DA;
+
+    transition: .3s ease;
+
+}
+
+.testimonial-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(78,122,71,.14);
+
+}
+
+
+/* ================= TOP ================= */
+
+.testimonial-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+}
+
+.testimonial-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #EAF6EA;
+
+    border-radius: 50%;
+
+}
+
+.testimonial-icon i {
+
+    width: 22px;
+
+    height: 22px;
+
+    color: #4E7A47;
+
+}
+
+.stars {
+
+    color: #D99A35;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ================= TEXT ================= */
+
+.testimonial-text {
+
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ================= USER ================= */
+
+.testimonial-user {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+.user-avatar {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #E5EBDD;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.user-avatar i {
+
+    width: 22px;
+
+    height: 22px;
+
+    color: #4E7A47;
+
+}
+
+.testimonial-user h4 {
+
+    color: #5D4037;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+
+}
+
+.testimonial-user span {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .testimonials-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .testimonials-section {
+
+        padding: 70px 25px;
+
+    }
+
+    .testimonials-header h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
